@@ -15,5 +15,5 @@ const Card = ({title, content, imagePath, width}) => {
 }
 
 export const Home = () => (
-    <Card title="test" width={"300"} content="c'est bon la" imagePath="/logo.png"/>
+    <Card title="Première approche du problème" width={"300"} content="c'est bon la" imagePath="/logo.png"/>
 )

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Onglet = ({text, route}) => {
     return (
-        <p className="hover:bg-cyan-400 px-3.5 py-2.5 cursor-pointer" onClick={route} >{text}</p>
+        <p className="hover:bg-cyan-400 duration-500 px-3.5 py-2.5 cursor-pointer" onClick={route} >{text}</p>
     );
 }
 
