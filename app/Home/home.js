@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {Card} from "@/app/utils";
 import Image from "next/image";

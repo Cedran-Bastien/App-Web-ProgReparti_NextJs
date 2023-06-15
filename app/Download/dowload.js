@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {Card, CardAlert} from "@/app/utils";
 
