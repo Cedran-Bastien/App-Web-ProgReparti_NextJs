@@ -5,7 +5,6 @@ import {useEffect} from "react";
 
 export default function Redirect() {
     const router = useRouter()
-
     useEffect(( ) => {
         if (!router){
             return
