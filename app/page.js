@@ -1,9 +1,18 @@
 'use client'
 
 import {useRouter} from "next/navigation";
+import {useEffect} from "react";
 
 export default function Redirect() {
     const router = useRouter()
-    router.push('/Home')
+
+    useEffect(( ) => {
+        if (!router){
+            return
+        }
+
+        router.push('/Home')
+    }, [router])
+
     return <></>
 }
