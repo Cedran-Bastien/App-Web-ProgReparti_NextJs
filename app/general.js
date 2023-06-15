@@ -6,13 +6,13 @@ import Image from "next/image";
 
 const Onglet = ({text, route}) => {
     return (
-        <p className="hover:bg-cyan-400 duration-500 px-3.5 py-2.5 cursor-pointer" onClick={route} >{text}</p>
+        <p className="hover:bg-cyan-400 hover:rounded duration-500 px-3.5 py-1 cursor-pointer" onClick={route} >{text}</p>
     );
 }
 
 const NavMain = ({onglets}) => {
     const listOnglet = onglets.map((data) => <Onglet key={data.name} text={data.name} route={data.route}  />)
-    return <nav className="flex flex-row back bg-cyan-500">{listOnglet}</nav>
+    return <nav className="flex flex-row back bg-cyan-500 gap-2 p-2">{listOnglet}</nav>
 }
 
 
